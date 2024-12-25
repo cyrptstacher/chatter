@@ -48,7 +48,7 @@ export const NavRail: FC<NavRailProps> = ({ variant = 'light' }) => {
             rel={'noopener noreferrer'}
             className={cn(
               'flex items-center justify-center',
-              'h-8 w-8 rounded-full',
+              'size-8 rounded-full',
               isDark
                 ? 'border border-neutral-100'
                 : 'border border-neutral-700',

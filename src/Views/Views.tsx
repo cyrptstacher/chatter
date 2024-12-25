@@ -10,7 +10,7 @@ import { match } from 'ts-pattern';
 
 function getInitialMessage() {
   const today = format(new Date(), 'LLLL do, yyyy');
-  return `Start your response with: "Welcome to Chatter AI, your source for daily interactive marketupdates. The date is ${today}." Then, use the web_search tool to answer this question: Give a crypto market update and news? Do not acknowledge that you received this request.`;
+  return `Start your response with: "Welcome to Chatter AI, your source for daily interactive marketupdates. The date is ${today}." Then, use the web_search tool to answer this question: Give me crypto market update. Do not acknowledge that you received this request.`;
 }
 
 export type ViewsProps = Record<never, never>;

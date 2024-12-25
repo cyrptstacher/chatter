@@ -72,3 +72,5 @@ export const NavRail: FC<NavRailProps> = ({ variant = 'light' }) => {
     </div>
   );
 };
+
+// This comment ensures we have a newline at the end of file

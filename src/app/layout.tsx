@@ -41,7 +41,7 @@ export default function RootLayout({
           'flex min-h-screen flex-col',
         )}
       >
-        <DownloadAppBanner />
+        {/* <DownloadAppBanner /> */}
         <div
           className={'relative grow overflow-auto [transform:translateZ(0px)]'}
         >

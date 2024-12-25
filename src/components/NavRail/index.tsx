@@ -1,6 +1,6 @@
 'use client';
 import { cn } from '@/utils';
-import { Rocket } from 'lucide-react';
+import { Twitter } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 import { HumeWordmark } from '../HumeWordmark';
@@ -48,11 +48,11 @@ export const NavRail: FC<NavRailProps> = ({ variant = 'light' }) => {
             rel={'noopener noreferrer'}
             className={cn(
               'flex items-center justify-center',
-              'text-sm font-medium ',
+              'h-8 w-8 rounded-full',
               isDark
                 ? 'border border-neutral-100'
                 : 'border border-neutral-700',
-              'h-8 rounded-full bg-transparent px-4',
+              'bg-transparent',
               isDark
                 ? 'hover:bg-neutral-100 hover:text-black'
                 : 'hover:bg-neutral-700 hover:text-white',
@@ -60,18 +60,11 @@ export const NavRail: FC<NavRailProps> = ({ variant = 'light' }) => {
                 ? 'focus:bg-neutral-100 focus:text-black'
                 : 'focus:bg-neutral-700 focus:text-white',
               'focus:outline-none',
-              'shrink-0 grow',
-              'gap-1',
-              'min-w-0',
               isDark ? 'text-neutral-100' : 'text-neutral-800',
             )}
           >
-            <span className={'opacity-70'}>
-              <Rocket className={'size-4'} />
-            </span>
-            <span className={cn('line-clamp-1 shrink truncate')}>
-              Start building
-            </span>
+            <Twitter className="size-4" />
+            <span className="sr-only">Follow on X (Twitter)</span>
           </Link>
         </div>
       </div>

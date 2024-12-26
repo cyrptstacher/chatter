@@ -4,7 +4,7 @@ import { cn } from '@/utils';
 import { Twitter } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
-import { HumeWordmark } from '../HumeWordmark';
+import { ChatterLogo } from '../HumeWordmark';
 
 export type NavRailProps = {
   variant?: 'light' | 'dark';
@@ -24,17 +24,17 @@ export const NavRail: FC<NavRailProps> = ({ variant = 'light' }) => {
     >
       <div className={'flex shrink items-center gap-3 pl-6'}>
         <Link
-          href={'https://hume.ai'}
+          href={'https://chatterai.fun/'}
           target={'_blank'}
           rel={'noopener noreferrer'}
         >
-          <HumeWordmark
+          <ChatterLogo
             className={cn(
-              'h-5 w-auto',
+              'text-xl',
               isDark ? 'text-neutral-100' : 'text-neutral-700',
             )}
           />
-          <span className={'sr-only'}>{`Hume AI's website`}</span>
+          <span className={'sr-only'}>Chatter AI website</span>
         </Link>
       </div>
       <div className={'relative isolate h-full grow'}>
@@ -44,7 +44,7 @@ export const NavRail: FC<NavRailProps> = ({ variant = 'light' }) => {
           }
         >
           <Link
-            href={'https://beta.hume.ai/playground/voice'}
+            href={'https://x.com/ChatterAiX'}
             target={'_blank'}
             rel={'noopener noreferrer'}
             className={cn(
@@ -72,5 +72,3 @@ export const NavRail: FC<NavRailProps> = ({ variant = 'light' }) => {
     </div>
   );
 };
-
-// This comment ensures we have a newline at the end of file

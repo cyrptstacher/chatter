@@ -15,6 +15,13 @@ const DownloadAppBanner = dynamic(
   },
 );
 
+const CryptoAddress = dynamic(
+  () => import('@/components/CryptoAddress'),
+  {
+    ssr: false,
+  },
+);
+
 export const metadata: Metadata = {
   title: 'Chatter • Hume AI',
   description: 'Chatter: An interactive podcast experience',
@@ -48,6 +55,7 @@ export default function RootLayout({
           <DatadogInit />
           {children}
         </div>
+        <CryptoAddress />
       </body>
     </html>
   );

@@ -28,7 +28,7 @@ export const AppHeading = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.3, delay: 0.6 }}
       >
-        <div>An interactive podcast experience</div>
+        <h6>Interactive crypto podcast experience, <br />dropping daily alpha.</h6>
       </motion.p>
     </>
   );

@@ -57,24 +57,7 @@ export const HomeView: FC<HomeViewProps> = ({ setActiveView }) => {
           {status.value === 'connecting' ? 'Connecting...' : 'Start'}
         </Button>
         <div className="max-w-sm text-center text-sm">
-          By starting a conversation, I accept Hume&apos;s{' '}
-          <a
-            className="cursor-pointer underline"
-            href="https://beta.hume.ai/policies/terms-of-use"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Terms of Use
-          </a>{' '}
-          and acknowledge the{' '}
-          <a
-            className="cursor-pointer underline"
-            href="https://www.hume.ai/privacy-policy"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Privacy Policy
-          </a>
+          Let Hume drop daily alpha or ask him specific questions you have and he will help you with the latest data.
         </div>
       </motion.div>
 

@@ -24,7 +24,7 @@ const CryptoAddress = dynamic(
 
 export const metadata: Metadata = {
   title: 'Chatter • Hume AI',
-  description: 'Chatter: An interactive podcast experience',
+  description: 'Chatter: An interactive crypto podcast experience, dropping daily alpha.',
   metadataBase: new URL(
     `https://${process.env.VERCEL_URL ?? `localhost:${process.env.PORT ?? '4444'}`}`,
   ),

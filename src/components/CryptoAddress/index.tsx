@@ -5,7 +5,7 @@ import { Copy, Check } from 'lucide-react';
 
 const CryptoAddress = () => {
   const [copied, setCopied] = useState(false);
-  const address = "Coming Soon"; // Replace with your actual crypto address
+  const address = "7uB2k4nMA28egNmVpZRNm98Xt6QpqSMNXfrWGiHEpump"; // Replace with your actual crypto address
 
   const copyToClipboard = async () => {
     try {
